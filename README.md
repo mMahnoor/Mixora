@@ -2,7 +2,7 @@
 It's a playful web app that lets you discover cocktails from around the world — complete with ingredients, preparation steps, and a splash of style.
 This project is built as a hands-on experiment to explore API integration and dynamic content rendering using a free public cocktail API.
 
-# 🛠 Tech Stack
+## 🛠 Tech Stack
 
 HTML5 – Structure and content
 
@@ -14,7 +14,7 @@ JavaScript (Vanilla) – Logic and interactivity
 
 Free Cocktail API – Fetching live cocktail data
 
-# ⚙️ How It Works
+## ⚙️ How It Works
 
 The user searches for a cocktail or browses through a list.
 
