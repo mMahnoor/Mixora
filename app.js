@@ -114,7 +114,8 @@ const displayDrinks = (items) => {
     const div = document.createElement("div");
     div.id = "items-div"
     div.classList.add("row", "justify-content-center");
-    items ? items.forEach((item, id) => {
+    // console.log(items)
+    (items && items != "no data found") ? items.forEach((item, id) => {
         console.log(item)
         const divs = document.createElement("div");
         divs.classList.add("col", "custom-align");
@@ -148,20 +149,22 @@ const displayDrinks = (items) => {
     container.appendChild(div);
 
     // Action: Add to group event listener and text truncate
-    items.forEach((item, id) => {
-        const instruction = document.getElementById(id);
-        instruction.innerText = instruction.innerText.slice(0, 15) + "...";
-        const add = document.getElementById(item.idDrink);
-        add.addEventListener("click", () => {
-            const val = handleAddToGroup(item);
-            if(val!=0) {
-                add.disabled = true;
-                add.innerText = "Added";
-                add.style.color = "rgba(157, 157, 157, 1)"
-                add.style.borderColor = "rgba(157, 157, 157, 1)"
-            }
+    if(items && items != "no data found") {
+        items.forEach((item, id) => {
+            const instruction = document.getElementById(id);
+            instruction.innerText = instruction.innerText.slice(0, 15) + "...";
+            const add = document.getElementById(item.idDrink);
+            add.addEventListener("click", () => {
+                const val = handleAddToGroup(item);
+                if(val!=0) {
+                    add.disabled = true;
+                    add.innerText = "Added";
+                    add.style.color = "rgba(157, 157, 157, 1)"
+                    add.style.borderColor = "rgba(157, 157, 157, 1)"
+                }
+            });
         });
-    });
+    }
 
 }
 
