@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+h2 {
+    font-family: "Caprasimo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h5 {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+h6 {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.custom-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-shadow{
+    /* width: 250px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border: 0;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+.img-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
